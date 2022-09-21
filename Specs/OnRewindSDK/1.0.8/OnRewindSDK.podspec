@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.ios.vendored_frameworks = 'OnRewindSDK.xcframework'
   s.static_framework = true
 
-s.dependency 'google-cast-sdk', '4.7.0'
+s.dependency 'google-cast-sdk'
 s.dependency 'SportBuff', '0.2.0.0'
 s.dependency 'onrewindshared'
 
