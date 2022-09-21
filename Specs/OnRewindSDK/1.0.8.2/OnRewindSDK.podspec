@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
   s.name = 'OnRewindSDK'
-  s.version = '1.0.8.1'
+  s.version = '1.0.8.2'
   s.summary = 'OnRewind summary'
   s.homepage = 'https://github.com/netcosports'
 
