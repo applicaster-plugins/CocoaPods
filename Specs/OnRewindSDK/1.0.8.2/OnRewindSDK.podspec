@@ -16,12 +16,16 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '12.0'
   s.ios.vendored_frameworks = 'OnRewindSDK.xcframework'
   #s.static_framework = true
+  s.dependency 'google-cast-sdk-no-bluetooth', '4.7.0'
+  s.dependency 'SportBuff', '0.2.0.0'
+  s.dependency 'onrewindshared'
 
-s.dependency 'google-cast-sdk-no-bluetooth', '4.7.0'
-s.dependency 'SportBuff', '0.2.0.0'
-s.dependency 'onrewindshared'
-
-
+  s.xcconfig =  {
+    'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+    'ENABLE_BITCODE' => 'YES',
+    'SWIFT_VERSION' => '5.1'
+  }
+  
   def s.post_install(target)
       target.build_configurations.each do |config|
           config.build_settings['ARCHS'] = ["arm64", "x86_64"]
