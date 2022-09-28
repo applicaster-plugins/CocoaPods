@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '12.0'
   s.ios.vendored_frameworks = 'OnRewindSDK.xcframework'
-  s.static_framework = true
+  #s.static_framework = true
 
 s.dependency 'google-cast-sdk-no-bluetooth', '4.7.0'
 s.dependency 'SportBuff', '0.2.0.0'
