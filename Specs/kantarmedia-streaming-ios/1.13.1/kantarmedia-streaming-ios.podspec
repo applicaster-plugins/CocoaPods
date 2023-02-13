@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
     }
 
     s.author = { 'Ilya Kozlov' => 'ilya02k@gmail.com' }
-
+    s.resources = ["kantarmedia-streaming-ios.xcframework/KMA_SpringStreams.h"]
 end
