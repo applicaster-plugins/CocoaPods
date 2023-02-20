@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
     
     #s.vendored_frameworks = 'kantarmedia-streaming-ios.xcframework'
     #s.vendored_libraries = '**/kantarmedia-streaming-ios.a'
-    s.source_files  = ['src/**/*.{h,m,swift}','**/*.{h,m,swift}']
+    s.source_files  = ['src/**/*.{h,m,swift}','**/*.{h,m,swift,a}']
     s.resources = ['src/**/*.{png,xib}']
 end
