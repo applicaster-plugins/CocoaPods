@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
     s.author = { 'Ilya Kozlov' => 'ilya02k@gmail.com' }
     
-    s.vendored_frameworks = 'kantarmedia-streaming-ios.xcframework'
+    #s.vendored_frameworks = 'kantarmedia-streaming-ios.xcframework'
     s.vendored_libraries = '**/kantarmedia-streaming-ios.a'
     s.source_files  = ['src/**/*.{h,m,swift}','**/*.{h,m,swift}']
     s.resources = ['src/**/*.{png,xib}']
